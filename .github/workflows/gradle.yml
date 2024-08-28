@@ -26,7 +26,7 @@ jobs:
       - name: Run SUT
         run: java -jar ./artifacts/app-card-delivery.jar &
       - name: Build with Gradle
-        run: ./gradlew clean test -Dselenide.headless=true
+        run: ./gradlew clean test --info -Dselenide.headless=true
 
 # Команда `chmod +x gradlew` делает файл gradlew исполняемым в linux.
 # Команда `./gradlew test` собирает ваш проект и запускает тесты.
